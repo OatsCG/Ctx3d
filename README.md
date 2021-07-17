@@ -84,11 +84,8 @@ document.addEventListener("mousemove", function() {
 });
 ```
 ![ezgif-2-4689ae5cbaeb](https://user-images.githubusercontent.com/66077830/126022867-2edfb166-9ea1-43b1-a639-b2db7bcd8243.gif)
-
-
+<br/><br/>
 ### rect(x, y, z, width, height, rotX, rotY, rotZ)
-
-
 Example:
 ```
 setInterval(draw, 10);
@@ -107,8 +104,7 @@ document.addEventListener("mousemove", function() {
 });
 ```
 ![ezgif-2-aaffee67261d](https://user-images.githubusercontent.com/66077830/126022874-56f7ab0d-7d19-4300-9b49-b41f5550fae9.gif)
-
-
+<br/><br/>
 ### rect3d(x, y, z, width, height, depth, rotX, rotY, rotZ)
 > Not reccomended - only draws edges, NOT 6 faces. Use rect() for that
 ```
@@ -126,7 +122,7 @@ document.addEventListener("mousemove", function() {
 });
 ```
 ![ezgif-2-c91507f101e2](https://user-images.githubusercontent.com/66077830/126022876-3efd6bdd-1364-4693-be79-d0b6d937902c.gif)
-
+<br/><br/>
 
 ### arc(x, y, z, rotX, rotY, rotZ, radius, startAngle, endAngle, counterclockwise=false)
 ```
@@ -146,7 +142,7 @@ document.addEventListener("mousemove", function() {
 });
 ```
 ![ezgif-2-d82106ec5769](https://user-images.githubusercontent.com/66077830/126022880-58ec2cf8-e6ad-4678-b71d-286a8588fcbd.gif)
-
+<br/><br/>
 
 ## Additional Functions
 
@@ -155,7 +151,7 @@ Applies specified rotations to a 3D vector, and returns the new coordinates in 3
 
 ### convert3dto2d(x, y, z)
 Applies stage rotation to the 3D vector, and returns the projected 2D coordinates
-
+<br/><br/>
 **Other Canvas properties or 2D methods can be accessed through `Ctx3d.context`**
 ```
 Ctx3d.context.lineWidth = 5;
