@@ -63,56 +63,90 @@ The y-index may be flipped using `Ctx3d.invertedY = true;` if that space is more
 
 Example:
 ```
-Ctx3d.beginPath();
-Ctx3d.moveTo(-50, 0, -50);
-Ctx3d.lineTo(50, 0, -50);
-Ctx3d.lineTo(0, 0, 50);
-Ctx3d.lineTo(-50, 0, -50);
-Ctx3d.lineTo(0, -75, 0);
-Ctx3d.lineTo(50, 0, -50);
-Ctx3d.moveTo(0, -75, 0);
-Ctx3d.lineTo(0, 0, 50);
-Ctx3d.stroke();
+setInterval(draw, 10);
+function draw() {
+  Ctx3d.clearRect(0, 0, c.width, c.height);
+  Ctx3d.beginPath();
+  Ctx3d.moveTo(-50, 0, -50);
+  Ctx3d.lineTo(50, 0, -50);
+  Ctx3d.lineTo(0, 0, 50);
+  Ctx3d.lineTo(-50, 0, -50);
+  Ctx3d.lineTo(0, -75, 0);
+  Ctx3d.lineTo(50, 0, -50);
+  Ctx3d.moveTo(0, -75, 0);
+  Ctx3d.lineTo(0, 0, 50);
+  Ctx3d.stroke();
+}
+
+document.addEventListener("mousemove", function() {
+  Ctx3d.rotationY = (event.clientX - c.width / 2) * 0.01;
+  Ctx3d.rotationX = (event.clientY - c.height / 2) * -0.01;
+});
 ```
+![ezgif-2-4689ae5cbaeb](https://user-images.githubusercontent.com/66077830/126022867-2edfb166-9ea1-43b1-a639-b2db7bcd8243.gif)
+
 
 #### rect(x, y, z, width, height, rotX, rotY, rotZ)
 
 
 Example:
 ```
-Ctx3d.beginPath();
-Ctx3d.rect(-100, -50, 50, 200, 100, 0, 0, 0)
-Ctx3d.rect(-100, -50, 50, 200, 100, 0, Math.PI * 0.5, 0)
-Ctx3d.fill();
-Ctx3d.stroke();
+setInterval(draw, 10);
+function draw() {
+  Ctx3d.clearRect(0, 0, c.width, c.height);
+  Ctx3d.beginPath();
+  Ctx3d.rect(-100, -50, 50, 200, 100, 0, 0, 0)
+  Ctx3d.rect(-100, -50, 50, 200, 100, 0, Math.PI * 0.5, 0)
+  Ctx3d.fill();
+  Ctx3d.stroke();
+}
+
+document.addEventListener("mousemove", function() {
+  Ctx3d.rotationY = (event.clientX - c.width / 2) * 0.01;
+  Ctx3d.rotationX = (event.clientY - c.height / 2) * -0.01;
+});
 ```
+![ezgif-2-aaffee67261d](https://user-images.githubusercontent.com/66077830/126022874-56f7ab0d-7d19-4300-9b49-b41f5550fae9.gif)
+
 
 #### rect3d(x, y, z, width, height, depth, rotX, rotY, rotZ)
 > Not reccomended - only draws edges, NOT 6 faces. Use rect() for that
 ```
-var i = 0;
-setInterval(spin, 10);
-function spin() {
+setInterval(draw, 10);
+function draw() {
+  Ctx3d.clearRect(0, 0, c.width, c.height);
   Ctx3d.beginPath();
-  Ctx3d.rect3d(0, 0, 0, 300, 300, 100, i * 0.01, i * 0.02, i * 0.03)
+  Ctx3d.rect3d(0, 0, 0, 50, 50, 30, 0, 0, 0)
   Ctx3d.stroke();
-  i++;
 }
+
+document.addEventListener("mousemove", function() {
+  Ctx3d.rotationY = (event.clientX - c.width / 2) * 0.01;
+  Ctx3d.rotationX = (event.clientY - c.height / 2) * -0.01;
+});
 ```
+![ezgif-2-c91507f101e2](https://user-images.githubusercontent.com/66077830/126022876-3efd6bdd-1364-4693-be79-d0b6d937902c.gif)
+
 
 #### arc(x, y, z, rotX, rotY, rotZ, radius, startAngle, endAngle, counterclockwise=false)
 ```
-var i = 0;
-setInterval(spin, 10);
-function spin() {
+setInterval(draw, 10);
+function draw() {
+  Ctx3d.clearRect(0, 0, c.width, c.height);
   Ctx3d.beginPath();
-  Ctx3d.arc(0, 0, 0, i * 0.01, i * 0.02, i * 0.03, 200, 0, Math.PI);
+  Ctx3d.arc(0, 0, 0, 0, 0, 0, 50, 0, Math.PI);
   Ctx3d.closePath();
   Ctx3d.fill();
   Ctx3d.stroke();
-  i++;
 }
+
+document.addEventListener("mousemove", function() {
+  Ctx3d.rotationY = (event.clientX - c.width / 2) * 0.01;
+  Ctx3d.rotationX = (event.clientY - c.height / 2) * -0.01;
+});
 ```
+![ezgif-2-d82106ec5769](https://user-images.githubusercontent.com/66077830/126022880-58ec2cf8-e6ad-4678-b71d-286a8588fcbd.gif)
+
 
 ## Additional Functions
 
