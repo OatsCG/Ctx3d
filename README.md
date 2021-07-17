@@ -5,7 +5,7 @@ HTML5 Canvas library adding a z-index and 3D rotations to the basic draw functio
 ## Initialization
 #### HTML:
 ```
-<script src="myurltoctx3d.js"></script>
+<script src="https://combinatronics.com/OatsCG/Ctx3d/main/Ctx3d.js"></script>
 <canvas id="myCanvas"></canvas>
 ```
 #### JavaScript:
