@@ -24,6 +24,7 @@ All coordinates originate from the middle of the canvas
 (2d Graph)
 
 A positive z-index moves towards the camera, and away if negative. The scale of this can be changed with `Ctx3d.perspective`. The default is 700.
+A positive y-index moves downwards and negative moves upwards.
 
 (3D graph)
 
