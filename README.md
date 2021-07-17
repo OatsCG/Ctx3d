@@ -29,6 +29,8 @@ A positive z-index moves towards the camera, and away if negative. The scale of 
 
 The y-index may be flipped using `Ctx3d.invertedY = true;` if that space is more comfortable.
 
+`Ctx3d.rotationX`, `Ctx3d.rotationY`, and `Ctx3d.rotationZ` apply rotations to the entire stage around the middle.
+
 
 ## All Properties and Methods
 * context=null
