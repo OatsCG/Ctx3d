@@ -1,3 +1,6 @@
+//BY OATSCG
+//DONT STEAL PLS JUST USE <script src="Ctx3d.js"></script>
+
 var Ctx3d = {
   context: null,
   fillStyle: "black",
