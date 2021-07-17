@@ -13,7 +13,7 @@ HTML5 Canvas library adding a z-index and 3D rotations to the basic draw functio
 var c = document.getElementById("myCanvas");
 Ctx3d.context = c.getContext("2d");
 
-Ctx3d.fillStyle = "white";
+Ctx3d.fillStyle = "black";
 Ctx3d.strokeStyle = "red";
 ```
 
