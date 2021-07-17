@@ -42,6 +42,9 @@ The y-index may be flipped using `Ctx3d.invertedY = true;` if that space is more
 * rotationX=0
 * rotationY=0
 * rotationZ=0
+
+<br/>
+
 * beginPath()
 * closePath()
 * fill()
