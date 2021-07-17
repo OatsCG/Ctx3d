@@ -57,8 +57,8 @@ The y-index may be flipped using `Ctx3d.invertedY = true;` if that space is more
 
 ## Draw Functions
 
-#### moveTo(x, y, z)
-#### lineTo(x, y, z)
+### moveTo(x, y, z)
+### lineTo(x, y, z)
 
 
 Example:
@@ -86,7 +86,7 @@ document.addEventListener("mousemove", function() {
 ![ezgif-2-4689ae5cbaeb](https://user-images.githubusercontent.com/66077830/126022867-2edfb166-9ea1-43b1-a639-b2db7bcd8243.gif)
 
 
-#### rect(x, y, z, width, height, rotX, rotY, rotZ)
+### rect(x, y, z, width, height, rotX, rotY, rotZ)
 
 
 Example:
@@ -109,7 +109,7 @@ document.addEventListener("mousemove", function() {
 ![ezgif-2-aaffee67261d](https://user-images.githubusercontent.com/66077830/126022874-56f7ab0d-7d19-4300-9b49-b41f5550fae9.gif)
 
 
-#### rect3d(x, y, z, width, height, depth, rotX, rotY, rotZ)
+### rect3d(x, y, z, width, height, depth, rotX, rotY, rotZ)
 > Not reccomended - only draws edges, NOT 6 faces. Use rect() for that
 ```
 setInterval(draw, 10);
@@ -128,7 +128,7 @@ document.addEventListener("mousemove", function() {
 ![ezgif-2-c91507f101e2](https://user-images.githubusercontent.com/66077830/126022876-3efd6bdd-1364-4693-be79-d0b6d937902c.gif)
 
 
-#### arc(x, y, z, rotX, rotY, rotZ, radius, startAngle, endAngle, counterclockwise=false)
+### arc(x, y, z, rotX, rotY, rotZ, radius, startAngle, endAngle, counterclockwise=false)
 ```
 setInterval(draw, 10);
 function draw() {
@@ -150,10 +150,10 @@ document.addEventListener("mousemove", function() {
 
 ## Additional Functions
 
-#### applyrotation(x, y, z, rotX, rotY, rotZ)
+### applyrotation(x, y, z, rotX, rotY, rotZ)
 Applies specified rotations to a 3D vector, and returns the new coordinates in 3D space
 
-#### convert3dto2d(x, y, z)
+### convert3dto2d(x, y, z)
 Applies stage rotation to the 3D vector, and returns the projected 2D coordinates
 
 **Other Canvas properties or 2D methods can be accessed through `Ctx3d.context`**
