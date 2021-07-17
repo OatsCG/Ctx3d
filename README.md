@@ -21,12 +21,9 @@ Ctx3d.strokeStyle = "red";
 ## 3D space
 All coordinates originate from the middle of the canvas
 
-(2d Graph)
-
 A positive z-index moves towards the camera, and away if negative. The scale of this can be changed with `Ctx3d.perspective`. The default is 700.
-A positive y-index moves downwards and negative moves upwards.
 
-(3D graph)
+A positive y-index moves downwards and negative moves upwards.
 
 The y-index may be flipped using `Ctx3d.invertedY = true;` if that space is more comfortable.
 
